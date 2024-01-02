@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="nav">
+        Agenda de contato
+    </div>
+
+    <section id="table">
+        <div id="input-data">
+            <input type="text" id="name" class="input-text" placeholder="Nome" required >
+            <input type="email" id="email" class="input-text" placeholder="E-mail" required >
+            <input type="number" id="phone" class="input-text" placeholder="Telefone" required >
+            <input type="text" id="address" class="input-text" placeholder="Endereço" required >
+            <input type="submit" id="input-btn" value="cadastrar" onclick="return addToTable()">
+        </div>
+
+        <table id="myTable">
+            <tr id="0">
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Ação</th>
+            </tr>
+        </table>
+    </section>
+    
+</body>
+</html>

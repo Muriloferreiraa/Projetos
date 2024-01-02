@@ -1,0 +1,97 @@
+@font-face{
+    font-family: "ubuntu";
+    src: url("../font/ubuntu-M.ttf") format("truetype");
+}
+
+    #nav{
+        width: 100%;
+        height: 100px;
+
+        background-color: lightslategray;
+        color: white;
+        font-size: 32px;
+        font-family: ubuntu;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    #input-data{
+        width: 90%;
+        font-family: ubuntu;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+    }
+
+    .input-text{
+        flex: 1;
+        min-width: 210px;
+        margin: 5px;
+        height: 35px;
+        padding-left: 5px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #262626;
+    }
+
+    .input-text:focus{
+        border-color: lightsteelblue;
+    }
+
+    .input-btn{
+        flex: 1;
+        margin: 5px;
+        height: 39px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #262626;
+        cursor: pointer;
+    }
+
+    .input-btn:hover{
+        background-color: #383838;
+        border-color: #383838;
+        color: white;
+    }
+
+    #myTable{
+        font-family: ubuntu;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    #myTable th{
+        background-color: lightslategray;
+        padding: 10px;
+        color: white;
+        font-weight: 100;
+    }
+
+    #myTable td, th{
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    #myTable td{
+        padding: 5px;
+
+    }
+
+    #myTable tr:hover{
+        background-color: #ddd;
+    }
+
+    .remove-btn{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        border-width: 0px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>um titulo legal </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi pariatur quaerat recusandae eligendi ullam non at corrupti ipsa aperiam qui ducimus voluptatum ipsum suscipit quisquam, et impedit doloremque veniam!</p>
+
+    <button id="btn">Clique aqui</button>
+     <p id="id"> </p>
+      
+     <script>
+        var element = document.getElementById("btn");
+        
+        element.addEventListener('click',exibir_mensagem);
+        element.addEventListener('mouseover',exibir_mensagem2);
+        element.addEventListener('mouseout',exibir_mensagem3);
+
+        function exibir_mensagem(){
+            document.getElementById("id").innerHTML += "mouse Clicked <br>"
+        }
+     function exibir_mensagem2(){
+        document.getElementById("id").innerHTML += "mouse over! <br>"
+     }
+      
+      function exibir_mensagem3(){
+        document.getElementById("id").innerHTML += "mouse Out! <br>"
+      }
+
+
+     </script>
+   
+
+    <!-- <h2>umtitulo legal </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi pariatur quaerat recusandae eligendi ullam non at corrupti ipsa aperiam qui ducimus voluptatum ipsum suscipit quisquam, et impedit doloremque veniam!</p>
+
+    <button id="btn">Clique aqui</button>
+
+    <script>
+
+        var element = document.getElementById("btn");
+
+        element.addEventListener('click',exibir_mensagem);
+        element.addEventListener('click',exibir_mensagem2);
+
+        function exibir_mensagem(){
+            alert("sejam bem-vindos!");
+
+        }
+
+        function exibir_mensagem2(){
+            alert("segunda mensagem");
+
+        }
+
+    </script> -->
+    
+  
+    <!-- <div id="estilo" onmouseover="mouse_over(this)"onmouseout="mouse_out(this)">
+        mouse Over me!
+    </div>
+
+
+     <script>
+        function mouse_over(obj){
+            obj.innerHTML = "mouse out me!";
+            obj.setAttribute('id','novo estilo')
+        }
+
+        function mouse_out(obj){
+            obj.innerHTML = "mouse Over me!"
+            obj.setAttribute('id', 'novo estilo')
+        }
+     </script> -->
+
+     <!-- <label for="nome">Nome completo</label>
+     <input type="text" id="nome" onchange="upperCase()">
+
+    <script>
+           function upperCase(){
+        var x = document.getElementById("nome");
+        var aux = x.value.toUpperCase();
+        x.value = aux;
+    }
+    </script> -->
+    <!-- <p>um texto qualquer...</p>
+    <button onclick="alterar_cor()"> mudar a cor</button>
+
+    
+    <script>
+        function alterar_cor(){
+            var element=document.getElementsByTagName("p");
+            element[0].style.backgroundColor ="red";
+
+        }
+    </script> -->
+
+    
+</body>
+</html>
